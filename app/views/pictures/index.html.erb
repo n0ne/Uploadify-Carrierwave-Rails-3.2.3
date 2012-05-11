@@ -48,8 +48,7 @@
 <% @pictures.each do |picture| %>
   <tr>
     <td><%= image_tag picture.image.thumb %></td>
-    <td><%= link_to 'Show', picture %></td>
-    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+    <td><%= link_to 'Show', picture %></td>    
     <td><%= link_to 'Destroy', picture, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
