@@ -22,9 +22,9 @@
     auto            : true,
     multi           : true,
     removeCompleted : true,
-    'onUploadComplete' : function(file) {
-            alert('The file ' + file.name + ' finished processing.');
-    },
+    // 'onUploadComplete' : function(file) {
+    //         alert('The file ' + file.name + ' finished processing.');
+    // },
     formData        : uploadify_script_data
     // onUploadComplete : function(file) {
     //   alert(file);
@@ -56,5 +56,3 @@
 </table>
 
 <br />
-
-<%= link_to 'New Picture', new_picture_path %>
