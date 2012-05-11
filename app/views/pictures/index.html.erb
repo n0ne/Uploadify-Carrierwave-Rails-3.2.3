@@ -1,0 +1,60 @@
+<%= form_for Picture.new, :html => {:multipart => true} do |f| %> 
+ 
+<p>
+  <%= f.file_field :photo, :id => "uploadify"%> </p>
+  
+<% end %>
+<script>
+<% key = Rails.application.config.session_options[:key] %>
+  var uploadify_script_data = {};
+  var csrf_param = $('meta[name=csrf-param]').attr('content');
+  var csrf_token = $('meta[name=csrf-token]').attr('content');
+  uploadify_script_data[csrf_param] = encodeURI(encodeURIComponent(csrf_token));
+  uploadify_script_data['<%= key %>'] = '<%= cookies[key] %>';
+  
+  $(document).ready(function() {
+  var uploadify_script_data = {};
+  $('#uploadify').uploadify({
+    swf             : '<%= asset_path("uploadify.swf") %>',
+    uploader        : '<%= pictures_path %>',
+    // cancelImg       : '/images/uploadify-cancel.png',
+    debug           : true,
+    auto            : true,
+    multi           : true,
+    removeCompleted : true,
+    'onUploadComplete' : function(file) {
+            alert('The file ' + file.name + ' finished processing.');
+    },
+    formData        : uploadify_script_data
+    // onUploadComplete : function(file) {
+    //   alert(file);
+    // }
+  });
+});
+</script>
+
+
+
+<h1>Listing pictures</h1>
+
+<table>
+  <tr>
+    <th>Image</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pictures.each do |picture| %>
+  <tr>
+    <td><%= image_tag picture.image.thumb %></td>
+    <td><%= link_to 'Show', picture %></td>
+    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+    <td><%= link_to 'Destroy', picture, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Picture', new_picture_path %>

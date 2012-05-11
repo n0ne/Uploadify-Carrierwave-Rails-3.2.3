@@ -1,0 +1,40 @@
+<%= form_for(@picture,:html => {:multipart =>true}) do |f| %>
+  <% if @picture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
+
+      <ul>
+      <% @picture.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.file_field :image%>
+
+    <input id="uploadify" name="uploadify" type="file" />
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<script>
+$(document).ready(function() {
+  var uploadify_script_data = {};
+  $('#uploadify').uploadify({
+    uploader        : '/images/uploadify.swf',
+    script          : '<%= pictures_path %>',
+    cancelImg       : '/images/cancel.png',
+    auto            : true,
+    multi           : true,
+    removeCompleted : true,
+    scriptData      : uploadify_script_data,
+    onComplete      : function(event, ID, fileObj, doc, data){
+    }
+  });
+});
+</script>

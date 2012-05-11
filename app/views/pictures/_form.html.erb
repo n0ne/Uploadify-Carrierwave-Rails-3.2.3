@@ -1,0 +1,32 @@
+
+
+
+<%= form_for Picture.new, :html => {:multipart => true} do |f| %> 
+ 
+<p>
+  <%= f.file_field :photo, :id => "uploadify"%> </p>
+  <p><%= f.submit "Upload" %></p> 
+<% end %>
+<script>
+<% key = Rails.application.config.session_options[:key] %>
+  var uploadify_script_data = {};
+  var csrf_param = $('meta[name=csrf-param]').attr('content');
+  var csrf_token = $('meta[name=csrf-token]').attr('content');
+  uploadify_script_data[csrf_param] = encodeURI(encodeURIComponent(csrf_token));
+  uploadify_script_data['<%= key %>'] = '<%= cookies[key] %>';
+  
+  $(document).ready(function() {
+  var uploadify_script_data = {};
+  $('#uploadify').uploadify({
+    swf             : '<%= asset_path("uploadify.swf") %>',
+    uploader        : '<%= pictures_path %>',
+    // cancelImg       : '/images/uploadify-cancel.png',
+    auto            : true,
+    multi           : true,
+    removeCompleted : true,
+    scriptData      : uploadify_script_data,
+    onComplete      : function(event, ID, fileObj, doc, data){
+    }
+  });
+});
+</script>
