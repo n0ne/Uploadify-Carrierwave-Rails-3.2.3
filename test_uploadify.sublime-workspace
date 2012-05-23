@@ -1,0 +1,577 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"th",
+				"thumb"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"up",
+				"uploadify"
+			],
+			[
+				"ver",
+				"vertical_ratio"
+			],
+			[
+				"co",
+				"columns"
+			],
+			[
+				"or",
+				"original_width"
+			],
+			[
+				"b",
+				"belongs_to"
+			],
+			[
+				"sc",
+				"scope"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/pictures/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 3424,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/application.js",
+			"settings":
+			{
+				"buffer_size": 690,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/picture.rb",
+			"settings":
+			{
+				"buffer_size": 252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/pictures_controller.rb",
+			"settings":
+			{
+				"buffer_size": 3150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css",
+			"settings":
+			{
+				"buffer_size": 545,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/bootstrap_and_overrides.css.less",
+			"settings":
+			{
+				"buffer_size": 1104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1904,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/uploaders/image_uploader.rb",
+			"settings":
+			{
+				"buffer_size": 1740,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 362,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 331.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/none/Загрузки/valums-file-uploader-b3b20b1/server/php.php",
+		"/home/none/rails/test_uploadify/.htpasswd",
+		"/home/none/rails/test_uploadify/config/application.rb",
+		"/home/none/rails/test_uploadify/app/models/picture.rb",
+		"/home/none/rails/test_uploadify/app/uploaders/image_uploader.rb",
+		"/home/none/rails/test_uploadify/app/views/pictures/_form.html.erb",
+		"/home/none/rails/test_uploadify/app/assets/stylesheets/uploadify.css",
+		"/home/none/rails/test_uploadify/app/controllers/pictures_controller.rb",
+		"/home/none/rails/test_uploadify/app/views/pictures/create.js.erb",
+		"/home/none/rails/test_uploadify/app/views/pictures/index.html.erb",
+		"/home/none/rails/test_uploadify/app/views/pictures/show.html.erb",
+		"/home/none/rails/test_uploadify/.htaccess",
+		"/home/none/rails/test_uploadify/Gemfile",
+		"/home/none/rails/test_uploadify/config/routes.rb",
+		"/home/none/rails/test_uploadify/app/assets/stylesheets/uploadify.swf",
+		"/home/none/rails/noneCMS/app/controllers/admin/galleries_controller.rb",
+		"/home/none/rails/noneCMS/app/assets/stylesheets/sessions.css.sass",
+		"/home/none/rails/noneCMS/app/assets/stylesheets/admin/common.css.sass",
+		"/home/none/rails/noneCMS/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/home/none/rails/noneCMS/app/assets/javascripts/bootstrap.js.coffee",
+		"/home/none/rails/noneCMS/app/assets/javascripts/admin/pictures.js.coffee",
+		"/home/none/rails/noneCMS/app/uploaders/image_uploader.rb",
+		"/home/none/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/none/rails/noneCMS/app/views/admin/galleries/_topmenu.html.haml",
+		"/home/none/rails/noneCMS/app/views/admin/galleries/_header.html.haml",
+		"/home/none/rails/noneCMS/app/models/article.rb",
+		"/home/none/rails/noneCMS/app/views/admin/pictures/edit.html.haml",
+		"/home/none/rails/noneCMS/app/views/admin/pictures/_form.html.haml",
+		"/home/none/rails/noneCMS/app/models/deposit.rb",
+		"/home/none/rails/noneCMS/app/models/news.rb",
+		"/home/none/rails/noneCMS/app/models/platform.rb",
+		"/home/none/rails/noneCMS/app/assets/javascripts/admin/galleries.js.coffee",
+		"/home/none/rails/uploadify-CarrierWave/app/controllers/application_controller.rb",
+		"/home/none/rails/uploadify-CarrierWave/app/assets/javascripts/application.js",
+		"/home/none/rails/uploadify-CarrierWave/Gemfile",
+		"/home/none/rails/gallery_example/app/controllers/pictures_controller.rb",
+		"/home/none/rails/gallery_example/Gemfile",
+		"/home/none/rails/gallery_example/app/helpers/pictures_helper.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/pictures/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 3424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2285,
+								2285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 493.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/javascripts/application.js",
+					"settings":
+					{
+						"buffer_size": 690,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/picture.rb",
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/pictures_controller.rb",
+					"settings":
+					{
+						"buffer_size": 3150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2563,
+								2563
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1734.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/stylesheets/application.css",
+					"settings":
+					{
+						"buffer_size": 545,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/assets/stylesheets/bootstrap_and_overrides.css.less",
+					"settings":
+					{
+						"buffer_size": 1104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1904,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/uploaders/image_uploader.rb",
+					"settings":
+					{
+						"buffer_size": 1740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1671,
+								1734
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 612.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.565306122449,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/none/rails/ajax_audio_upload/ajax_audio_upload.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}

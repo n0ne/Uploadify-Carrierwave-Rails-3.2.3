@@ -651,8 +651,8 @@ Things that we updated
 			
 			// Truncate the filename if it's too long
 			var fileName = file.name;
-			if (fileName.length > 25) {
-				fileName = fileName.substr(0,25) + '...';
+			if (fileName.length > 100) {
+				fileName = fileName.substr(0,100) + '...';
 			}
 
 			// Run the default event handler

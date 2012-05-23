@@ -1,4 +1,8 @@
+# -*- encoding : utf-8 -*-
+#encoding: utf-8
+
 class PicturesController < ApplicationController
+
 
 protect_from_forgery :except => :create
 
@@ -54,12 +58,18 @@ protect_from_forgery :except => :create
 
 
     # @picture = Picture.new(:image => 'paris.jpg')
+    # newparams[:picture][:image].inspect
+
+    # image_filename = URI.unescape(newparams[:picture][:image])
+    # @picture = Picture.new(URI.unescape(newparams[:picture]))
+
     @picture = Picture.new(newparams[:picture])
 
     respond_to do |format|
       if @picture.save
         # format.html { redirect_to @picture, notice: 'Picture was successfully created.' }
         # format.js { @picture.id }
+        return  true
       else
         format.html { render action: "new" }
         format.json { render json: @picture.errors, status: :unprocessable_entity }
@@ -95,7 +105,14 @@ protect_from_forgery :except => :create
     end
   end
 
-
+  def get_thumb
+    # temp_filename = params[:file]
+    # filename = string = CGI::unescape(temp_filename)
+    file = Picture.find_by_image(params[:file])
+    respond_to do |format|
+        format.json { render json: {:id => file.id, :thumb => file.image.thumb.url} }
+    end    
+  end
 
   private 
   def coerce(params)
@@ -109,4 +126,5 @@ protect_from_forgery :except => :create
       params
     end 
   end
+
 end

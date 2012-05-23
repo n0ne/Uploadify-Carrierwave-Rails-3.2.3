@@ -1,3 +1,4 @@
+
 <%= form_for Picture.new, :html => {:multipart => true} do |f| %> 
  
 <p>
@@ -17,14 +18,36 @@
   $('#uploadify').uploadify({
     swf             : '<%= asset_path("uploadify.swf") %>',
     uploader        : '<%= pictures_path %>',
-    // cancelImg       : '/images/uploadify-cancel.png',
-    debug           : true,
+    // buttonText      : 'Загрузить...',
+    buttonCursor    : 'hand',
+    height          : 20,
     auto            : true,
     multi           : true,
     removeCompleted : true,
-    // 'onUploadComplete' : function(file) {
-    //         alert('The file ' + file.name + ' finished processing.');
-    // },
+    onUploadComplete : function(file) {
+             $.ajax({
+                url: "<%= get_thumb_pictures_path %>", 
+                dataType: 'json', 
+                type: 'get', 
+                data: {file: file.name},
+                complete: function(json) {
+                  var obj = jQuery.parseJSON(json.responseText);
+                  var str = '<tr>' +
+                              '<td><img src="' + obj.thumb + '"></td>' +
+                              '<td style="vertical-align: middle;">' +
+                                '<a href="/pictures/' + obj.id + '/edit" class="btn btn-mini" style="margin-right: 5px;">Edit</a>' +
+                                '<a href="/pictures/' + obj.id + '" class="btn btn-mini btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a>' +
+                              '</td>' +
+                            '</tr>';
+                  $(str).prependTo($('tbody'));
+                  // var obj = jQuery.parseJSON(json.responseText);
+                  // console.log(obj.thumb);                               
+                }  
+              });
+    },
+    onUploadError : function(file, errorCode, errorMsg, errorString) {
+      alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+    },
     formData        : uploadify_script_data
     // onUploadComplete : function(file) {
     //   alert(file);
@@ -33,25 +56,27 @@
 });
 </script>
 
-
-
-<h1>Listing pictures</h1>
-
-<table>
-  <tr>
-    <th>Image</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @pictures.each do |picture| %>
-  <tr>
-    <td><%= image_tag picture.image.thumb %></td>
-    <td><%= link_to 'Show', picture %></td>    
-    <td><%= link_to 'Destroy', picture, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pictures.each do |picture| %>
+      <tr>
+        
+        <td><%= image_tag picture.image.thumb.url %></td>
+        <td style="vertical-align: middle;">
+          <%= link_to 'Show', picture_path(picture), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      picture_path(picture),
+                      :method => :delete,
+                      :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
-
-<br />
