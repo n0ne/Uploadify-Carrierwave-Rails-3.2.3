@@ -1,4 +1,4 @@
-== Uploadify 3.1 + Carrierwave + Rails 3.2
+== Uploadify 3.1 + Carrierwave + Rails 3.2.3
 
 A small application that demonstrates the work of these programs together.
 
