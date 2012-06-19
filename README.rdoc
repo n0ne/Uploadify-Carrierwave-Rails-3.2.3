@@ -17,6 +17,6 @@ A small application that demonstrates the work of these programs together.
 4. Start server
        rails s
 
-5. Open brawser:
+5. Open browser:
        http://localhost:3000/
 
